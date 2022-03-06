@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".RecycleActivity"
+     android:layout_marginLeft="5sp"
+    android:layout_marginTop="5sp"
+    android:layout_marginRight="5sp"
+    android:layout_marginBottom="10sp"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/PICTURE2"
+            android:layout_width="match_parent"
+            android:layout_height="234dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            app:srcCompat="@drawable/gradiant_overlay" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="234dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            app:srcCompat="@drawable/gradiant_overlay" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="235dp"
+            android:layout_marginEnd="0dp"
+            android:text="@string/desc"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/adress"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="194dp"
+            android:layout_marginEnd="2dp"
+            android:text="company adress"
+            android:textColor="@color/purple_700"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/company1"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="194dp"
+            android:layout_marginEnd="223dp"
+            android:text="company name"
+            android:textColor="@color/purple_700"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="199dp"
+            android:text="START DATE"
+            android:textColor="@color/purple_700"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date3"
+            android:layout_width="149dp"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="265dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="-3dp"
+            android:text="END DATE"
+            android:textColor="@color/purple_700"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

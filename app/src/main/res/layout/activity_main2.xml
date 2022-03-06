@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/submit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="18dp"
+        android:text="MY CAREER"
+        android:textColor="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity2">
+
+
+        <View
+            android:id="@+id/myRectangleView3"
+            android:layout_width="373dp"
+            android:layout_height="327dp"
+            android:layout_below="@+id/hobbies"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-405dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="74dp"
+            android:background="@drawable/rectangle" />
+
+        <Button
+            android:id="@+id/skills"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="419dp"
+            android:layout_toStartOf="@+id/hobbies"
+            android:text="Skills"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/hobbies"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="419dp"
+            android:layout_toStartOf="@+id/language"
+            android:text="hobbies"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/language"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="420dp"
+            android:text="language"
+            android:textColor="#ffffff" />
+
+
+        <ImageView
+            android:id="@+id/iv_click_me"
+            android:layout_width="143dp"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="487dp"
+            android:src="@drawable/ic_curriculum_vitae" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="com.example.applicationcurriculumvitae.Profile.HobbiesFragment"
+            android:layout_width="410dp"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/myRectangleView3"
+            android:layout_alignTop="@+id/myRectangleView3"
+            android:layout_alignEnd="@+id/myRectangleView3"
+            android:layout_alignBottom="@+id/myRectangleView3"
+            android:layout_marginStart="-6dp"
+            android:layout_marginTop="-269dp"
+            android:layout_marginEnd="-11dp"
+            android:layout_marginBottom="-57dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
